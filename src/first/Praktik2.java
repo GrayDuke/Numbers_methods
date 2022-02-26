@@ -109,11 +109,11 @@ class DoubleMethod{
         double num1 = methodNewton(check_Xo());
         double num2 = methodHord();
         if(num1 < num2){
-            nums.add(num1);
-            nums.add(num2);
+            nums.add(round(num1,4));
+            nums.add(round(num2,4));
         }else{
-            nums.add(num2);
-            nums.add(num1);
+            nums.add(round(num2,4));
+            nums.add(round(num1,4));
         }
         new_accuracy = (num1+num2)/2;
         difference_accuracy = round(Math.abs(new_accuracy-num1),5);
